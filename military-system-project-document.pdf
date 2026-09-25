@@ -1,0 +1,75 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 3643 >>
+stream
+BT /F1 10 Tf 50 760 Td (Military Asset Management System) Tj ET
+BT /F1 10 Tf 50 746 Td (Project Documentation) Tj ET
+BT /F1 10 Tf 50 718 Td (1. Project Overview) Tj ET
+BT /F1 10 Tf 50 704 Td (The Military Asset Management System is a modular operations dashboard designed to help) Tj ET
+BT /F1 10 Tf 50 690 Td (command, logistics, and base-level personnel monitor, assign, transfer, and expend) Tj ET
+BT /F1 10 Tf 50 676 Td (critical military assets across multiple bases. The initial framework focuses on core) Tj ET
+BT /F1 10 Tf 50 662 Td (operational transparency and accountability rather than a full production-grade enterprise) Tj ET
+BT /F1 10 Tf 50 648 Td (platform.) Tj ET
+BT /F1 10 Tf 50 620 Td (Assumptions) Tj ET
+BT /F1 10 Tf 50 606 Td (- Assets tracked include vehicles, weapons, ammunition, and other equipment categories.) Tj ET
+BT /F1 10 Tf 50 592 Td (- The system is intended for command-level oversight and operational planning across a) Tj ET
+BT /F1 10 Tf 50 578 Td (small-to-medium multi-base environment.) Tj ET
+BT /F1 10 Tf 50 564 Td (- Data can be seeded and used for demonstration and continuing development.) Tj ET
+BT /F1 10 Tf 50 536 Td (Limitations) Tj ET
+BT /F1 10 Tf 50 522 Td (- The current implementation is an initial framework and not a fully hardened production) Tj ET
+BT /F1 10 Tf 50 508 Td (enterprise solution.) Tj ET
+BT /F1 10 Tf 50 494 Td (- Authentication is demonstration-oriented rather than a full JWT/OAuth system.) Tj ET
+BT /F1 10 Tf 50 480 Td (- Role enforcement relies on request headers in the backend and does not yet include MFA) Tj ET
+BT /F1 10 Tf 50 466 Td (or secure session management.) Tj ET
+BT /F1 10 Tf 50 452 Td (- Database connectivity must be configured in the backend environment for live operational) Tj ET
+BT /F1 10 Tf 50 438 Td (use.) Tj ET
+BT /F1 10 Tf 50 410 Td (2. Tech Stack and Architecture) Tj ET
+BT /F1 10 Tf 50 396 Td (Backend: Node.js + Express) Tj ET
+BT /F1 10 Tf 50 382 Td (- REST API layer for the dashboard, purchases, transfers, assignments, and expenditures.) Tj ET
+BT /F1 10 Tf 50 368 Td (- Middleware-based RBAC enforcement.) Tj ET
+BT /F1 10 Tf 50 354 Td (- Audit logging for operational accountability.) Tj ET
+BT /F1 10 Tf 50 326 Td (Frontend: React + Vite) Tj ET
+BT /F1 10 Tf 50 312 Td (- Fast UI development environment with dashboard-driven views.) Tj ET
+BT /F1 10 Tf 50 298 Td (- Pages for dashboard, purchases, transfers, assignments, and inventory tracking.) Tj ET
+BT /F1 10 Tf 50 284 Td (- Fetches data from the backend API using a shared API URL helper.) Tj ET
+BT /F1 10 Tf 50 256 Td (Database: PostgreSQL + Drizzle ORM) Tj ET
+BT /F1 10 Tf 50 242 Td (- Core tables provide structured relational storage for bases, inventory, transfers, and) Tj ET
+BT /F1 10 Tf 50 228 Td (assignments.) Tj ET
+BT /F1 10 Tf 50 214 Td (- Drizzle ORM supports schema-driven development and database query management.) Tj ET
+BT /F1 10 Tf 50 200 Td (- PostgreSQL is suitable for transactional operations, role-aware reporting, and audit) Tj ET
+BT /F1 10 Tf 50 186 Td (retention.) Tj ET
+BT /F1 10 Tf 50 158 Td (Architecture) Tj ET
+BT /F1 10 Tf 50 144 Td (- Frontend requests are sent to http://localhost:5000/api.) Tj ET
+BT /F1 10 Tf 50 130 Td (- Backend validates role and base access for each route.) Tj ET
+BT /F1 10 Tf 50 116 Td (- When the database is valid and connected, data is read from the database; otherwise,) Tj ET
+BT /F1 10 Tf 50 102 Td (fallback demo data is returned.) Tj ET
+BT /F1 10 Tf 50 74 Td (3. Data Models and Schema) Tj ET
+BT /F1 10 Tf 50 60 Td (Core entities and relationships:) Tj ET
+BT /F1 10 Tf 50 46 Td (- bases: id, name, commander, created_at) Tj ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+4006
+%%EOF
