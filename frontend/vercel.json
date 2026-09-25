@@ -1,0 +1,5 @@
+{
+  "buildCommand": "rm -rf node_modules package-lock.json && npm install && npm run build",
+  "installCommand": "echo 'skip default install'",
+  "outputDirectory": "dist"
+}
